@@ -1,0 +1,8 @@
+[
+  {"name": "30 Гемов", "price": "120", "img": "gems_link"},
+  {"name": "80 Гемов", "price": "350", "img": "gems_link"},
+  {"name": "170 Гемов", "price": "800", "img": "gems_link"},
+  {"name": "360 Гемов", "price": "1000", "img": "gems_link"},
+  {"name": "960 Гемов", "price": "3090", "img": "gems_link"},
+  {"name": "2000 Гемов", "price": "5000", "img": "gems_link"}
+]
