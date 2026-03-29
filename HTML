@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brawl Shop - Магазин Гемов</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1a2a6c;
+            color: white;
+            font-family: 'Lilita One', cursive;
+            text-align: center;
+            margin: 0;
+        }
+        header { background: #f39c12; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.5); }
+        .container { display: flex; flex-wrap: wrap; justify-content: center; padding: 20px; }
+        .card {
+            background: #2c3e50;
+            border: 4px solid #f1c40f;
+            border-radius: 15px;
+            margin: 15px;
+            padding: 20px;
+            width: 200px;
+            transition: transform 0.2s;
+        }
+        .card:hover { transform: scale(1.05); }
+        .price { color: #2ecc71; font-size: 24px; }
+        button {
+            background: #e74c3c;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Lilita One', cursive;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>BRAWL CRYSTALS SHOP</h1></header>
+    <div class="container">
+        <div class="card">
+            <img src="https://via.placeholder.com/100" alt="Gems">
+            <h3>30 Гемов</h3>
+            <p class="price">199₽</p>
+            <button onclick="buy('30 Гемов')">Купить</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/100" alt="Gems">
+            <h3>80 Гемов</h3>
+            <p class="price">499₽</p>
+            <button onclick="buy('80 Гемов')">Купить</button>
+        </div>
+    </div>
+
+    <script>
+        function buy(item) {
+            alert('Вы выбрали: ' + item + '. Перенаправляем в Telegram для оплаты...');
+            // Сюда можно вставить ссылку на ваш ТГ бот или личку
+            window.location.href = "https://t.me/your_username"; 
+        }
+    </script>
+</body>
+</html>
